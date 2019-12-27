@@ -63,16 +63,16 @@
             <input type="text" id="nombreEdit" onclick="this.select()">
         </div>
 
+        <div id="emailPersona" class="input-group">
+            <label for="email">Mail</label>
+            <input type="email" id="emailEdit" onclick="this.select()">
+        </div>
+
         <div id="telPersona" class="input-group">
             <label for="tel">Teléfono</label>
             <input type="tel" id="telEdit" onclick="this.select()">
         </div>
         
-        <div id="emailPersona" class="input-group">
-            <label for="email">Correo Electrónico</label>
-            <input type="email" id="emailEdit" onclick="this.select()">
-        </div>
-
 
         <div class="botoncito">
             <button id="descargarBoton">Descargar Flyer</button>
