@@ -1,0 +1,272 @@
+@font-face {
+  font-family: 'scs-bold';
+  src: url(../fonts/scs-bold.otf);
+}
+
+@font-face {
+  font-family: 'scs-elight';
+  src: url(../fonts/scs-elight.otf);
+}
+
+@font-face {
+  font-family: 'scs-italic';
+  src: url(../fonts/scs-italic.otf);
+}
+
+@font-face {
+  font-family: 'scs-regular';
+  src: url(../fonts/scs-regular.otf);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #d4d4d4;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.col {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+}
+
+.editInfo {
+  width: calc(400px - 40px);
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #333333;
+  padding: 0px 20px;
+}
+
+.editInfo .title {
+  width: 100%;
+  text-align: center;
+}
+
+.editInfo .title h2 {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: .4px;
+}
+
+.editInfo .input-group {
+  padding: 10px 0;
+  text-align: left;
+  border-bottom: 1px solid #d4d4d4;
+  padding-bottom: 40px;
+}
+
+.editInfo .input-group label {
+  display: block;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+
+.editInfo .input-group input {
+  width: 94%;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  background: #cccccc;
+  transition: all .3s;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+  padding-left: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.editInfo .input-group input:focus {
+  border: 1px solid #00CD7B;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.12);
+  background: #FFFFFF !important;
+}
+
+.editInfo .botoncito {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.editInfo .botoncito #descargarBoton {
+  width: 250px;
+  height: 50px;
+  background: #001630;
+  color: #ffffff;
+  border-radius: 10px;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: .68px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.editInfo .botoncito #descargarBoton:hover {
+  background: #0096D6;
+}
+
+#descargar {
+  position: relative;
+  width: 600px;
+  left: 50%;
+  transform: translateX(calc(-50% - 200px));
+  background: #FFFFFF;
+}
+
+#descargar header {
+  padding: 80px 50px;
+  position: relative;
+}
+
+#descargar header h1 {
+  font-family: "scs-bold", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: .4px;
+  line-height: 32px;
+  color: #001630;
+}
+
+#descargar header h1 span {
+  color: #0096D6;
+}
+
+#descargar header .barraVerde {
+  display: block;
+  width: 68px;
+  height: 5px;
+  background: #00CD7B;
+  margin: 10px 0px;
+  border-radius: 2px;
+}
+
+#descargar header p {
+  font-family: "scs-elight", Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 17px;
+  color: #1a1a1a;
+}
+
+#descargar header img {
+  position: absolute;
+  top: 46%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 250px;
+}
+
+#descargar .bajada {
+  margin: 0px 50px;
+  text-align: center;
+}
+
+#descargar .bajada h2 {
+  font-family: "scs-bold", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #0096D6;
+  padding: 20px;
+  border-top: 3px solid #0096D6;
+  border-bottom: 3px solid #0096D6;
+}
+
+#descargar .bajada p {
+  font-family: "scs-elight", Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  color: #0096D6;
+  padding: 20px 0px 50px 0px;
+}
+
+#descargar .bajada p strong {
+  font-family: "scs-bold", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+#descargar .footer {
+  padding: 20px 50px;
+  background: #001630;
+  color: #FFFFFF;
+}
+
+#descargar .footer h4 {
+  font-family: "scs-elight", Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+#descargar .footer .datos {
+  margin: 20px 0px;
+  position: relative;
+}
+
+#descargar .footer .datos p {
+  font-family: "scs-bold", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 80px;
+}
+
+#descargar .footer .datos p:nth-child(1) {
+  color: #00CD7B;
+}
+
+#descargar .footer .datos p span {
+  font-family: "scs-elight", Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+#descargar .footer .datos img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#descargar footer {
+  padding: 20px 50px;
+  background: #0096D6;
+  text-align: right;
+}
+
+#descargar footer img {
+  width: 152px;
+}
+
+#mostrar {
+  position: absolute;
+  top: 50px;
+  left: 40%;
+  transform: translateX(-50%);
+  z-index: 100;
+  display: none;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  display: none;
+}

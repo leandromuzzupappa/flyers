@@ -1,0 +1,258 @@
+// Colors
+$white: #FFFFFF;
+$black: #1a1a1a;
+$dgrey: #333333;
+$mgrey: #cccccc;
+$lgrey: #d4d4d4;
+
+$blue: #001630;
+$lblue: #0096D6;
+
+$green: #00CD7B;
+
+// Fonts
+@font-face {
+    font-family: 'scs-bold';
+    src: url(../fonts/scs-bold.otf);
+}
+@font-face {
+    font-family: 'scs-elight';
+    src: url(../fonts/scs-elight.otf);
+}
+@font-face {
+    font-family: 'scs-italic';
+    src: url(../fonts/scs-italic.otf);
+}
+@font-face {
+    font-family: 'scs-regular';
+    src: url(../fonts/scs-regular.otf);
+}
+
+$scs-bold: 'scs-bold', Arial, Helvetica, sans-serif;
+$scs-elight: 'scs-elight', Arial, Helvetica, sans-serif;
+$scs-italic: 'scs-italic', Arial, Helvetica, sans-serif;
+$scs-regular: 'scs-regular', Arial, Helvetica, sans-serif;
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: $lgrey;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.col {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+}
+
+.editInfo {
+    width: calc(400px - 40px);
+    height: 100%;
+    position: fixed;
+    top: 0; right: 0;
+    background: $dgrey;
+    padding: 0px 20px;
+    .title {
+        width: 100%;
+        text-align: center;
+        h2 {
+            color: $white;
+            text-transform: uppercase;
+            letter-spacing: .4px;
+        }
+    }
+
+    .input-group {
+        //border: 1px solid red;
+        padding: 10px 0;
+        text-align: left;
+        border-bottom: 1px solid $lgrey;
+        padding-bottom: 40px;
+        label {
+            display: block;
+            margin-bottom: 20px;
+            color: $white;
+        }
+        input {
+            width: 94%;
+            height: 40px;
+            border-radius: 10px;
+            border: 1px solid #dddddd;
+            background: $mgrey;
+            transition: all .3s;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: left;
+            padding-left: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            &:focus {
+                border: 1px solid #00CD7B;
+                box-shadow: 3px 3px 10px rgba(0, 0, 0, .12);
+                background: $white !important;
+            }
+        }
+    }
+
+    .botoncito {
+        position: absolute;
+        bottom: 20px; left: 50%;
+        transform: translate(-50%);
+        #descargarBoton {
+            width: 250px;
+            height: 50px;
+            background: $blue;
+            color: #ffffff;
+            border-radius: 10px;
+            border: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: .68px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all .3s;
+            &:hover {
+                background: #0096D6;
+            }
+        }
+    }
+
+}
+
+#descargar {
+    position: relative;
+    width: 600px;
+    left: 50%;
+    transform: translateX(calc(-50% - 200px));
+    background: $white;
+    
+    header {
+        padding: 80px 50px;
+        position: relative;
+        h1 {
+            font-family: $scs-bold;
+            font-weight: 700;
+            font-size: 30px;
+            letter-spacing: .4px;
+            line-height: 32px;
+            color: $blue;
+            span {
+                color: $lblue;
+            }
+        }
+        .barraVerde {
+            display: block;
+            width: 68px;
+            height: 5px;
+            background: $green;
+            margin: 10px 0px;
+            border-radius: 2px;
+        }
+        p {
+            font-family: $scs-elight;
+            font-weight: 100;
+            font-size: 17px;
+            color: $black;
+        }
+        img {
+            position: absolute;
+            top: 46%; right: 20px;
+            transform: translateY(-50%);
+            width: 250px;
+        }
+    }
+    .bajada {
+        margin: 0px 50px;
+        text-align: center;
+        h2 {
+            font-family: $scs-bold;
+            font-weight: 700;
+            font-size: 18px;
+            color: $lblue;
+            padding: 20px;
+            border-top: 3px solid $lblue;
+            border-bottom: 3px solid $lblue;
+        }
+        p {
+            font-family: $scs-elight;
+            font-weight: 100;
+            font-size: 18px;
+            color: $lblue;
+            padding: 20px 0px 50px 0px;
+            strong {
+                font-family: $scs-bold;
+                font-weight: 700;
+            }
+        }
+    }
+    .footer {
+        padding: 20px 50px;
+        background: $blue;
+        color: $white;
+        h4 {
+            font-family: $scs-elight;
+            font-weight: 100;
+            font-size: 20px;
+        }
+        .datos {
+            margin: 20px 0px;
+            position: relative;
+            p {
+                font-family: $scs-bold;
+                font-weight: 700;
+                font-size: 18px;
+                margin-left: 80px;
+                &:nth-child(1) {
+                    color: $green;
+                }
+                span {
+                    font-family: $scs-elight;
+                    font-weight: 100;
+                }
+            }
+            img {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    footer {
+        padding: 20px 50px;
+        background: $lblue;
+        text-align: right;
+        img {
+            width: 152px;
+        }
+    }
+}
+
+#mostrar {
+    //width: 600px;
+    //border: 1px solid red;
+    position: absolute;
+    top: 50px;
+    left: 40%;
+    transform: translateX(-50%);
+    z-index: 100;
+    display: none;
+}
+.overlay {
+    width: 100%; height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, .8);
+    top: 0; left: 0;
+    display: none;
+}
